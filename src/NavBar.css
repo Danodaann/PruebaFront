@@ -1,0 +1,30 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+
+button #btn {
+  background-color: black;
+}
+
+/* Estilo para resaltar el botón seleccionado en amarillo */
+.active {
+  background-color: black;
+  color: yellow;
+  text-decoration: underline lightyellow; 
+}
+
+/* Estilos para hacer la barra de navegación responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar button {
+    margin-bottom: 5px;
+  }
+}

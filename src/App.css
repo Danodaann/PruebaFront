@@ -1,0 +1,68 @@
+/* Configuración para el contenedor principal de la aplicación */
+#root {
+  max-width: 500px;  /* Establece el ancho máximo del contenedor */
+  margin: 0 auto;    /* Centra el contenedor horizontalmente */
+  padding: 2rem;     /* Agrega relleno al contenedor */
+  text-align: center; /* Centra el texto en el contenedor */
+}
+
+/* Reglas de estilo para pantallas más pequeñas usando una regla de medios */
+@media screen and (max-width: 600px) {
+  #root {
+    padding: 1rem;    /* Ajusta el relleno para pantallas más pequeñas */
+  }
+
+  .logo {
+    height: 4em;      /* Ajusta el tamaño de la logo para pantallas más pequeñas */
+    padding: 1em;     /* Ajusta el relleno de la logo para pantallas más pequeñas */
+  }
+
+  .card {
+    padding: 1em;     /* Ajusta el relleno de las tarjetas para pantallas más pequeñas */
+  }
+}
+
+/* Estilo para la logo principal */
+.logo {
+  height: 6em;        /* Establece el tamaño de la logo */
+  padding: 1.5em;     /* Agrega relleno a la logo */
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+/* Estilo para la logo al pasar el ratón */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* Estilo específico para la logo de React al pasar el ratón */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animación para girar la logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aplica la animación solo si la preferencia de movimiento no es reducida */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Estilo para las tarjetas en la aplicación */
+.card {
+  padding: 2em;       /* Agrega relleno a las tarjetas */
+}
+
+/* Estilo específico para el texto "read-the-docs" */
+.read-the-docs {
+  color: #888;        /* Establece el color del texto */
+}
